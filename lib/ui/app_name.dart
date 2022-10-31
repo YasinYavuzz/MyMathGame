@@ -25,7 +25,7 @@ class AppNameUI extends StatelessWidget {
             children: [
               Text(
                 textAlign: TextAlign.center,
-                'Math Exercise',
+                'Brain Exercise',
                 style: TextStyle(
                     color: theme.isDark == true ? AppColors.darkScoreTextColor : AppColors.lightScoreTextColor,
                     fontSize: 25,

@@ -10,4 +10,8 @@ class AppAssets {
   static String exitAssets = "assets/exit.png";
   static String loginbgAssets = "assets/loginbg.png";
   static String voiceAssets = "assets/voice.png";
+  static String sandWatchAssets = "assets/sandwatch.png";
+  static String questionAssets = "assets/question.png";
+  static String correctAnswerAssets = "assets/correctanswer.png";
+  static String fastDeliveryAssets = "assets/fastdelivery.png";
 }
