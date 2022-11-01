@@ -66,21 +66,6 @@ class PuzzleMenu extends StatelessWidget {
                   )),
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(bottom: 3.h),
-            width: 10.w,
-            height: 17.h,
-            decoration: BoxDecoration(
-                color: Colors.red, borderRadius: BorderRadius.circular(25)),
-            
-          ),
-          Container(
-            width: 10.w,
-            height: 17.h,
-            decoration: BoxDecoration(
-                color: Colors.blue, borderRadius: BorderRadius.circular(25)),
-            
-          )
         ],
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mymathgame/core/app_colors.dart';
+import 'package:mymathgame/ui/calculator.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -80,68 +81,86 @@ class MathPuzzle extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   padding: EdgeInsets.all(0),
                   children: [
-                    Container(
-                        alignment: Alignment.centerLeft,
-                        margin: EdgeInsets.only(bottom: 3.h),
-                        width: 10.w,
-                        height: 15.h,
-                        decoration: BoxDecoration(
-                            color: Colors.amber,
-                            borderRadius: BorderRadius.circular(25),
-                            gradient: LinearGradient(
-                              begin: Alignment.bottomLeft,
-                              end: Alignment.centerRight,
-                              colors: [Colors.amber, Colors.red],
-                            )),
-                        child: Column(
-                          children: [
-                            Flexible(
-                                flex: 2,
-                                child: Row(
-                                  children: [
-                                    Container(
-                                        margin: EdgeInsets.only(left: 2.5.h),
-                                        width: 5.h,
-                                        child: Image.asset(
-                                          AppAssets.sandWatchAssets,
-                                          height: 10.h,
-                                        )),
-                                    Container(
-                                      margin: EdgeInsets.only(left: 3.h),
-                                      child: Text(
-                                        'Calculator',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 24,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    )
-                                  ],
-                                )),
-                            Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  width: 70.w,
-                                  height: .2.h,
-                                  color: Colors.black.withOpacity(0.4),
-                                )),
-                            Flexible(
-                                flex: 2,
-                                child: Container(
-                                    decoration: BoxDecoration(
-                                        //color: Colors.amber
+                    InkWell(
+                      onTap: () {
+                        Navigator.push<void>(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) =>
+                                const CalculatorUI(),
+                          ),
+                        );
+                      },
+                      child: Ink(
+                        //color: Colors.red,
+                        child: Container(
+                          alignment: Alignment.centerLeft,
+                          //margin: EdgeInsets.only(bottom: 3.h),
+                          width: 10.w,
+                          height: 15.h,
+                          decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius: BorderRadius.circular(25),
+                              gradient: LinearGradient(
+                                begin: Alignment.bottomLeft,
+                                end: Alignment.centerRight,
+                                colors: [Colors.amber, Colors.red],
+                              )),
+                          child: Column(
+                            children: [
+                              Flexible(
+                                  flex: 2,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                          margin: EdgeInsets.only(left: 2.5.h),
+                                          width: 5.h,
+                                          child: Image.asset(
+                                            AppAssets.sandWatchAssets,
+                                            height: 10.h,
+                                          )),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 3.h),
+                                        child: Text(
+                                          'Calculator',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 24,
+                                              fontWeight: FontWeight.w500),
                                         ),
-                                    child: Container(
-                                        margin: EdgeInsets.only(
-                                            top: 2.h, left: 3.5.h),
-                                        alignment: Alignment.topLeft,
-                                        child: Text('Score : ',
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.w500)))))
-                          ],
-                        )),
+                                      )
+                                    ],
+                                  )),
+                              Align(
+                                  alignment: Alignment.center,
+                                  child: Container(
+                                    width: 70.w,
+                                    height: .2.h,
+                                    color: Colors.black.withOpacity(0.4),
+                                  )),
+                              Flexible(
+                                  flex: 2,
+                                  child: Container(
+                                      decoration: BoxDecoration(
+                                          //color: Colors.amber
+                                          ),
+                                      child: Container(
+                                          margin: EdgeInsets.only(
+                                              top: 2.h, left: 3.5.h),
+                                          alignment: Alignment.topLeft,
+                                          child: Text('Score : ',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight:
+                                                      FontWeight.w500)))))
+                            ],
+                          )),
+                      )
+                    ),
+                    SizedBox(
+                      height: 3.h,
+                    ),
                     Container(
                         alignment: Alignment.centerLeft,
                         margin: EdgeInsets.only(bottom: 3.h),

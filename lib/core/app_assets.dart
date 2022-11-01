@@ -14,4 +14,16 @@ class AppAssets {
   static String questionAssets = "assets/question.png";
   static String correctAnswerAssets = "assets/correctanswer.png";
   static String fastDeliveryAssets = "assets/fastdelivery.png";
+  static String oneNumberAssets = "assets/one.svg";
+  static String twoNumberAssets = "assets/two.svg";
+  static String threeNumberAssets = "assets/three.svg";
+  static String fourNumberAssets = "assets/four.svg";
+  static String fiveNumberAssets = "assets/five.svg";
+  static String sixNumberAssets = "assets/six.svg";
+  static String sevenNumberAssets = "assets/seven.svg";
+  static String eightNumberAssets = "assets/eight.svg";
+  static String nineNumberAssets = "assets/nine.svg";
+  static String zeroNumberAssets = "assets/zero.svg";
+  static String backAssets = "assets/back.svg";
 }
+
