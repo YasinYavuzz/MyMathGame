@@ -1,15 +1,12 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:mymathgame/core/app_colors.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class AlertDialogUI extends StatelessWidget {
-  AlertDialogUI({super.key});
+import '../core/app_colors.dart';
 
+class GameOver extends StatelessWidget {
+  const GameOver({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +32,10 @@ class AlertDialogUI extends StatelessWidget {
                 child: Center(
                   child: Text(
                     textAlign: TextAlign.center,
-                    'Are you sure you want to quit the game?',
+                    'GAME OVER',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 18,
+                        fontSize: 24,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
@@ -79,7 +76,7 @@ class AlertDialogUI extends StatelessWidget {
                         ]),
                     child: Center(
                         child: Text(
-                      'YES',
+                      'RESTART',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -105,7 +102,8 @@ class AlertDialogUI extends StatelessWidget {
                                 offset: Offset(0, 0))
                           ]),
                       child: Icon(
-                        Icons.play_arrow,
+                        size: 4.h,
+                        Icons.cancel_presentation_sharp,
                         color: Colors.white,
                       )),
                 ],

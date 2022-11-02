@@ -25,5 +25,6 @@ class AppAssets {
   static String nineNumberAssets = "assets/nine.svg";
   static String zeroNumberAssets = "assets/zero.svg";
   static String backAssets = "assets/back.svg";
+  static String calculatorIntroAssets = "assets/calculator-intro.gif";
 }
 
