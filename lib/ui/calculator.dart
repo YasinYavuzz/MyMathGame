@@ -219,26 +219,31 @@ class _CalculatorUIState extends State<CalculatorUI> {
                                           'Calculator',
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.w500),
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.w700),
                                         ),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.only(top: 2.h),
-                                        width: 80.w,
+                                        margin: EdgeInsets.only(top: 1.2.h),
+                                        width: 85.w,
                                         height: 25.h,
                                         decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                              image: AssetImage(AppAssets
+                                                  .calculatorIntroAssets),
+                                              fit: BoxFit.cover,
+                                            ),
                                             //image: DecorationImage(image:Image.network(AppAssets.calculatorIntroAssets)),
                                             color: Colors.blue,
                                             borderRadius:
                                                 BorderRadius.circular(25)),
                                         //child: Text('Calculator',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w500),),
-                                        child: Image.asset(
-                                          AppAssets.calculatorIntroAssets,
-                                          fit: BoxFit.cover,
-                                          width: 70.w,
-                                          height: 20.h,
-                                        ),
+                                        // child: Image.asset(
+                                        //   AppAssets.calculatorIntroAssets,
+                                        //   fit: BoxFit.cover,
+                                        //   width: 70.w,
+                                        //   height: 20.h,
+                                        // ),
                                       ),
                                       Container(
                                         margin: EdgeInsets.only(top: 1.h),
@@ -337,7 +342,7 @@ class _CalculatorUIState extends State<CalculatorUI> {
                             ),
                           ),
                         ),
-                       
+
                         // Container(
                         //   //margin: EdgeInsets.only(bottom: 1.h),
                         //   child: IconButton(
@@ -353,16 +358,21 @@ class _CalculatorUIState extends State<CalculatorUI> {
               Align(
                 alignment: Alignment.center,
                 child: Container(
-                  margin: EdgeInsets.only(top: 2.h),
-                  width: 70.w,
-                  height: 8.h,
-                  decoration: BoxDecoration(
-                    //color: Colors.red
-                  ),
-                  child: Center(child: Text('10 - 2',style: 
-                        TextStyle(color: Colors.white,fontSize: 45,
-                        fontWeight: FontWeight.w500,letterSpacing: 2),))
-                ),
+                    margin: EdgeInsets.only(top: 2.h),
+                    width: 70.w,
+                    height: 8.h,
+                    decoration: BoxDecoration(
+                        //color: Colors.red
+                        ),
+                    child: Center(
+                        child: Text(
+                      '10 - 2',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 45,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 2),
+                    ))),
               ),
 
               Align(
@@ -383,9 +393,15 @@ class _CalculatorUIState extends State<CalculatorUI> {
                           offset: Offset(5, 5),
                         )
                       ]),
-                      child: Center(child: Text('000',style: 
-                        TextStyle(color: Colors.white,fontSize: 40,
-                        fontWeight: FontWeight.w500,letterSpacing: 2),)),
+                  child: Center(
+                      child: Text(
+                    '000',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w500,
+                        letterSpacing: 2),
+                  )),
                 ),
               ),
               // LinearPercentIndicator(
