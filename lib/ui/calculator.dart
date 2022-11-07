@@ -159,6 +159,9 @@ class _CalculatorUIState extends State<CalculatorUI> {
                 child: CircularPercentIndicator(
                   radius: 30.0,
                   restartAnimation: false,
+                  //arcBackgroundColor: Colors.blue,
+                  // curve: Curves.ease,
+                  // arcType: ArcType.HALF,
                   animation: true,
                   animationDuration: 40000,
                   onAnimationEnd: () {
@@ -175,7 +178,7 @@ class _CalculatorUIState extends State<CalculatorUI> {
                   ),
                   circularStrokeCap: CircularStrokeCap.butt,
                   backgroundColor: Colors.yellow,
-                  progressColor: Colors.red,
+                  progressColor: Colors.red 
                 ),
               ),
               Align(
